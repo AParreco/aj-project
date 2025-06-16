@@ -1,0 +1,79 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Color Palette */
+  :root {
+    --primary-purple: #6c5ce7;
+    --dark-purple: #5a4dcf;
+    --light-purple: #a29bfe;
+    --background: #f8f6ff;
+    --text-color: #2d2d2d;
+    --card-bg: #ffffff;
+    --shadow: rgba(0, 0, 0, 0.1);
+    --accent: #dfe6e9;
+  }
+  
+  /* Body Styling */
+  body {
+    background-color: var(--background);
+    color: var(--text-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    padding: 2rem;
+    text-align: center; 
+  }
+  
+  /* Headings */
+  h1, h2, h3 {
+    color: var(--primary-purple);
+  }
+  
+  /* Links */
+  a {
+    color: var(--dark-purple);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Button Styling */
+  button {
+    background-color: var(--primary-purple);
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin: 0.5rem
+  }
+  
+  button:hover {
+    background-color: var(--dark-purple);
+  }
+  
+  /* Card/Container Styling */
+  .card {
+    background: var(--card-bg);
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px var(--shadow);
+  }
+  
+  /* Example utility class for spacing */
+  .mt-2 { margin-top: 2rem; }
+
+  .card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* optional: rounded corners */
+    display: block;
+  }
+  
